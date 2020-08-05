@@ -1,0 +1,17 @@
+<mat-grid-list cols="3" rowHeight="350px">
+	<ng-container *ngFor="let p of portfolio">
+		<mat-grid-tile
+			*ngIf="!p.draft"
+			[colspan]="1"
+			[rowspan]="1"
+			[style.background]="p.tile.color"
+			class="project-tile">
+				<img class="project-image" src="{{p.image}}">
+				<div class="project-info" (click)="openDialog(p)">
+					{{p.type}}
+					<br />
+					{{p.title}}
+				</div>
+		</mat-grid-tile>
+	</ng-container>
+</mat-grid-list>

@@ -1,0 +1,19 @@
+<form #postForm="ngForm" (ngSubmit)="onSubmit()">
+    <input
+        type="text"
+        placeholder="Title"
+        id="title"
+        required
+        [(ngModel)]="post.title"
+        name="name">
+    <ckeditor 
+    [(ngModel)]="post.body"
+    required
+    [config]="model"
+    [editor]="Editor"
+    name="body"
+    data="">
+    </ckeditor>
+    <button mat-button type="submit">Submit</button>
+</form>
+
