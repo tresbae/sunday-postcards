@@ -32,7 +32,7 @@ export class PortfolioComponent {
         draft: false,
         title: 'Sunday Postcards',
         image: '../../assets/project-background.jpg',
-        description: 'Design and create Sunday Postcards',
+        description: 'Design and create Sunday Postcards using Angular',
         tile: {
           color: 'lightblue',
         }
@@ -43,7 +43,7 @@ export class PortfolioComponent {
         title: 'Travel Collection',
         description: 'Curate and print collection of travel postcards',
         tile: {
-          color: 'lightgray',
+          color: 'lightblue',
         }
       },
       {

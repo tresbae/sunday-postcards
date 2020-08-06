@@ -6,7 +6,7 @@
 			[rowspan]="1"
 			[style.background]="p.tile.color"
 			class="project-tile">
-				<img class="project-image" src="{{p.image}}">
+				<img  *ngIf="p.image" class="project-image" src="{{p.image}}">
 				<div class="project-info" (click)="openDialog(p)">
 					{{p.type}}
 					<br />
